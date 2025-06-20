@@ -4,3 +4,5 @@ Tensor ReLU::forward(const Tensor& input) const {
     for (size_t i = 0; i < input.data.size(); ++i) {
         output.data[i] = std::max(0.0f, input.data[i]);
     }
+    return output;
+}
